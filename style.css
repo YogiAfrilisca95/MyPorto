@@ -1,3 +1,10 @@
+:root {
+    --primary-blue: #0066cc;
+    --secondary-orange: #ff6600;
+    --secondary-yellow: #ffb703;
+    /* Warna kuning */
+}
+
 body {
     scroll-behavior: smooth;
 }
@@ -6,6 +13,36 @@ body {
     padding: 15px 0;
     /* Padding untuk navbar pada layar besar */
     transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand {
+    color: #ff6600;
+    /* Warna oranye pada brand/logo */
+}
+
+.navbar .navbar-brand:hover {
+    color: var(--primary-blue);
+    /* Warna saat di-hover, bisa disesuaikan */
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: bold;
+    color: #ff6600;
+
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--primary-blue);
+    /* Warna saat hover */
+}
+
+#modeToggle {
+    padding: 5px 10px;
+    /* Mengurangi padding tombol */
+    font-size: 1rem;
+    /* Mengurangi ukuran font */
+    border-radius: 50px;
+
 }
 
 .navbar.scrolled {
@@ -121,6 +158,12 @@ section {
     transform: rotate(-10deg) scale(1.2);
 }
 
+.card-img-top {
+    height: 200px;
+    /* Atur sesuai dengan ketinggian yang diinginkan */
+    object-fit: cover;
+    /* Memastikan gambar tetap terpotong secara proporsional */
+}
 
 /* Ukuran tombol navbar-toggler lebih kecil */
 @media (max-width: 768px) {
@@ -141,9 +184,9 @@ section {
     }
 
     .navbar-toggler-icon {
-        width: 24px;
+        width: 20px;
         /* Ukuran icon lebih kecil */
-        height: 24px;
+        height: 20px;
         /* Ukuran icon lebih kecil */
     }
 
@@ -155,5 +198,12 @@ section {
         border-radius: 50px;
         /* Membuat tombol lebih bulat (opsional) */
         margin-top: 2em;
+    }
+
+    .card-img-top {
+        height: 200px;
+        /* Atur sesuai dengan ketinggian yang diinginkan */
+        object-fit: cover;
+        /* Memastikan gambar tetap terpotong secara proporsional */
     }
 }
