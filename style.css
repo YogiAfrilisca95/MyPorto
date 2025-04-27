@@ -210,7 +210,7 @@ section {
         /* Menghindari masalah parallax di ponsel */
         background-position: top;
         /* Menyesuaikan posisi gambar */
-        height: 200vh;
+        height: 55vh;
         /* Mengurangi tinggi untuk layar ponsel */
     }
 
