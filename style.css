@@ -11,8 +11,13 @@ body {
 
 .navbar {
     padding: 15px 0;
-    /* Padding untuk navbar pada layar besar */
+    background-color: transparent;
+    /* Membuat navbar transparan */
+    backdrop-filter: blur(8px);
+    /* Efek blur pada latar belakang navbar */
     transition: all 0.3s ease;
+    box-shadow: none;
+    /* Menonaktifkan bayangan jika ada */
 }
 
 .navbar .navbar-brand {
@@ -205,7 +210,7 @@ section {
         /* Menghindari masalah parallax di ponsel */
         background-position: top;
         /* Menyesuaikan posisi gambar */
-        height: 80vh;
+        height: 200vh;
         /* Mengurangi tinggi untuk layar ponsel */
     }
 
