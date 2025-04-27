@@ -93,7 +93,7 @@ body {
     /* Parallax efek */
     position: relative;
     color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 5px 8px rgba(0, 0, 0, 1);
 }
 
 .hero::after {
@@ -198,6 +198,15 @@ section {
         border-radius: 50px;
         /* Membuat tombol lebih bulat (opsional) */
         margin-top: 2em;
+    }
+
+    .hero {
+        background-attachment: scroll;
+        /* Menghindari masalah parallax di ponsel */
+        background-position: top;
+        /* Menyesuaikan posisi gambar */
+        height: 80vh;
+        /* Mengurangi tinggi untuk layar ponsel */
     }
 
     .card-img-top {
