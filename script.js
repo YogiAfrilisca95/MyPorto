@@ -1,6 +1,6 @@
 // Typing Effect
 const typedTextSpan = document.querySelector(".typing");
-const words = ["I am not a Programmer", "I am not a UI/UX Designer", "I am not a Developer"];
+const words = ["I am not a Programmer:)", "I am not a UI/UX Designer:)", "I am not a Developer:)"];
 let wordIndex = 0;
 let charIndex = 0;
 let typingDelay = 100;
